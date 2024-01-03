@@ -1,3 +1,5 @@
 # mm6_maps
 
-engine version see in help
+Engine version see in help.
+Help read on runing programm.
+Run index.html.
