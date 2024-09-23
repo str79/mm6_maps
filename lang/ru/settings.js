@@ -1,502 +1,183 @@
 var Profiles=[
 	{
 		'Name':'New Sorpigal',
-		'File':'newsorp.GIF',
+		'File':'img/newsorp.GIF',
 		'pointarr':'newsorpPt',
 		'offsetTop':'235px',
 		'offsetLeft':'579px',
 		'StartIndex':1,
 		'zoom':1.9,
-		'GpoupList':'\
-		<div href="#" class="list-group-item"> \
-		<h4 class="list-group-item-heading"> \
-		<span class="icon"></span><span class="text">&nbsp;Учителя</span></h4> \
-		</div> \
-		<div href="#" class="list-group-item"> \
-		<h4 class="list-group-item-heading"> \
-		<span class="icon"></span><span class="text">&nbsp;Бочки</span></h4> \
-		</div> \
-		<div href="#" class="list-group-item"> \
-		<h4 class="list-group-item-heading"> \
-		<span class="icon"></span><span class="text">&nbsp;Разное</span></h4> \
-		</div> \
-		<div href="#" class="list-group-item"> \
-		<h4 class="list-group-item-heading"><span class="icon"></span><span class="text">&nbsp;Всяко</span></h4> \
-		</div> \
-		<div href="#" class="list-group-item autohist"> \
-		<h4 class="list-group-item-heading"> \
-		<span class="icon"></span><span class="text">&nbsp;История</span></h4> \
-		</div> \
-		',
+		'GpoupList':['Учителя','Бочки','Разное','Всяко'],
 	},
 	{
 		'Name':'The hive',
-		'File':'hive.gif',
+		'File':'img/hive.gif',
 		'pointarr':'hivePt',
 		'zoom':4.1,
 		'StartIndex':1,
 		'offsetLeft':'726px',
 		'offsetTop':'375px',
-		'GpoupList':'\
-		<div href="#" class="list-group-item"> \
-		<h4 class="list-group-item-heading"> \
-		<span class="icon"></span><span class="text">&nbsp;Учителя</span></h4> \
-		</div> \
-		<div href="#" class="list-group-item"> \
-		<h4 class="list-group-item-heading"> \
-		<span class="icon"></span><span class="text">&nbsp;Фонтаны</span></h4> \
-		</div> \
-		<div href="#" class="list-group-item"> \
-		<h4 class="list-group-item-heading"> \
-		<span class="icon"></span><span class="text">&nbsp;Разное</span></h4> \
-		</div> \
-		<div href="#" class="list-group-item"> \
-		<h4 class="list-group-item-heading"><span class="icon"></span><span class="text">&nbsp;Всяко</span></h4> \
-		</div> \
-		<div href="#" class="list-group-item autohist"> \
-		<h4 class="list-group-item-heading"> \
-		<span class="icon"></span><span class="text">&nbsp;История</span></h4> \
-		</div> \
-		',
+		'GpoupList':['Учителя','Фонтаны','Разное','Всяко'],
 	},
 	{
 		'Name':'SilverCove',
-		'File':'silver.GIF',
+		'File':'img/silver.GIF',
 		'pointarr':'silverPt',
 		'offsetTop':'201px',
 		'offsetLeft':'542px',
 		'StartIndex':1,
 		'zoom':2.1,
-		'GpoupList':'\
-		<div href="#" class="list-group-item"> \
-		<h4 class="list-group-item-heading"> \
-		<span class="icon"></span><span class="text">&nbsp;Учителя</span></h4> \
-		</div> \
-		<div href="#" class="list-group-item"> \
-		<h4 class="list-group-item-heading"> \
-		<span class="icon"></span><span class="text">&nbsp;Фонтаны</span></h4> \
-		</div> \
-		<div href="#" class="list-group-item"> \
-		<h4 class="list-group-item-heading"> \
-		<span class="icon"></span><span class="text">&nbsp;Прочее</span></h4> \
-		</div> \
-		<div href="#" class="list-group-item"> \
-		<h4 class="list-group-item-heading"><span class="icon"></span><span class="text">&nbsp;Всяко</span></h4> \
-		</div> \
-		<div href="#" class="list-group-item autohist"> \
-		<h4 class="list-group-item-heading"> \
-		<span class="icon"></span><span class="text">&nbsp;История</span></h4> \
-		</div> \
-		',
+		'GpoupList':['Учителя','Фонтаны','Прочее','Всяко'],
 	},
 	{
 		'Name':'Bootleg Bay',
-		'File':'bootleg.GIF',
+		'File':'img/bootleg.GIF',
 		'pointarr':'bootlegPt',
 		'offsetTop':'205px',
 		'offsetLeft':'584px',
 		'StartIndex':1,
 		'zoom':2.2,
-		'GpoupList':'\
-		<div href="#" class="list-group-item"> \
-		<h4 class="list-group-item-heading"> \
-		<span class="icon"></span><span class="text">&nbsp;Учителя</span></h4> \
-		</div> \
-		<div href="#" class="list-group-item"> \
-		<h4 class="list-group-item-heading"> \
-		<span class="icon"></span><span class="text">&nbsp;Фонтаны</span></h4> \
-		</div> \
-		<div href="#" class="list-group-item"> \
-		<h4 class="list-group-item-heading"> \
-		<span class="icon"></span><span class="text">&nbsp;Разное</span></h4> \
-		</div> \
-		<div href="#" class="list-group-item"> \
-		<h4 class="list-group-item-heading"><span class="icon"></span><span class="text">&nbsp;Всяко</span></h4> \
-		</div> \
-		<div href="#" class="list-group-item autohist"> \
-		<h4 class="list-group-item-heading"> \
-		<span class="icon"></span><span class="text">&nbsp;История</span></h4> \
-		</div> \
-		',
+		'GpoupList':['Учителя','Фонтаны','Разное','Всяко'],
 	},
 	{
 		'Name':'Kreigspire',
-		'File':'kriegspire.GIF',
+		'File':'img/kriegspire.GIF',
 		'pointarr':'kriegspirePt',
 		'offsetTop':'205px',
 		'offsetLeft':'601px',
 		'StartIndex':1,
 		'zoom':2.2,
-		'GpoupList':'\
-		<div href="#" class="list-group-item"> \
-		<h4 class="list-group-item-heading"> \
-		<span class="icon"></span><span class="text">&nbsp;Учителя</span></h4> \
-		</div> \
-		<div href="#" class="list-group-item"> \
-		<h4 class="list-group-item-heading"> \
-		<span class="icon"></span><span class="text">&nbsp;Фонтаны</span></h4> \
-		</div> \
-		<div href="#" class="list-group-item"> \
-		<h4 class="list-group-item-heading"> \
-		<span class="icon"></span><span class="text">&nbsp;Разное</span></h4> \
-		</div> \
-		<div href="#" class="list-group-item"> \
-		<h4 class="list-group-item-heading"><span class="icon"></span><span class="text">&nbsp;Всяко</span></h4> \
-		</div> \
-		<div href="#" class="list-group-item autohist"> \
-		<h4 class="list-group-item-heading"> \
-		<span class="icon"></span><span class="text">&nbsp;История</span></h4> \
-		</div> \
-		',
+		'GpoupList':['Учителя','Фонтаны','Разное','Всяко'],
 	},
 	{
 		'Name':'Eel Infested Waters',
-		'File':'eel.GIF',
+		'File':'img/eel.GIF',
 		'pointarr':'eelPt',
 		'offsetTop':'205px',
 		'offsetLeft':'601px',
 		'StartIndex':1,
 		'zoom':2.2,
-		'GpoupList':'\
-		<div href="#" class="list-group-item"> \
-		<h4 class="list-group-item-heading"> \
-		<span class="icon"></span><span class="text">&nbsp;Учителя</span></h4> \
-		</div> \
-		<div href="#" class="list-group-item"> \
-		<h4 class="list-group-item-heading"> \
-		<span class="icon"></span><span class="text">&nbsp;Разное</span></h4> \
-		</div> \
-		<div href="#" class="list-group-item"> \
-		<h4 class="list-group-item-heading"><span class="icon"></span><span class="text">&nbsp;Всяко</span></h4> \
-		</div> \
-		<div href="#" class="list-group-item autohist"> \
-		<h4 class="list-group-item-heading"> \
-		<span class="icon"></span><span class="text">&nbsp;История</span></h4> \
-		</div> \
-		',
+		'GpoupList':['Учителя','Разное','Всяко'],
 	},
 	{
 		'Name':'Сastle Kriegspire',
-		'File':'castleKriegspire.gif',
+		'File':'img/castleKriegspire.gif',
 		'pointarr':'castleKriegspirePt',
 		'zoom':4.1,
 		'StartIndex':1,
 		'offsetLeft':'551px',
 		'offsetTop':'355px',
-		'GpoupList':'\
-		<div href="#" class="list-group-item"> \
-		<h4 class="list-group-item-heading"> \
-		<span class="icon"></span><span class="text">&nbsp;Разное</span></h4> \
-		</div> \
-		<div href="#" class="list-group-item"> \
-		<h4 class="list-group-item-heading"> \
-		<span class="icon"></span><span class="text">&nbsp;Подковы</span></h4> \
-		</div> \
-		<div href="#" class="list-group-item autohist"> \
-		<h4 class="list-group-item-heading"> \
-		<span class="icon"></span><span class="text">&nbsp;История</span></h4> \
-		</div> \
-		',
+		'GpoupList':['Разное','Подковы'],
 	},
 	{
 		'Name':'CorlagonEstate',
-		'File':'CorlagonEstate.png',
+		'File':'img/CorlagonEstate.png',
 		'pointarr':'CorlagonEstatePt',
 		'offsetTop':'-67px',
 		'offsetLeft':'491px',
 		'StartIndex':1,
 		'zoom':1.5,
-		'GpoupList':'\
-		<div href="#" class="list-group-item"> \
-		<h4 class="list-group-item-heading"> \
-		<span class="icon"></span><span class="text">&nbsp;Путь</span></h4> \
-		</div> \
-		<div href="#" class="list-group-item"> \
-		<h4 class="list-group-item-heading"> \
-		<span class="icon"></span><span class="text">&nbsp;Переключатели</span></h4> \
-		</div> \
-		<div href="#" class="list-group-item autohist"> \
-		<h4 class="list-group-item-heading"> \
-		<span class="icon"></span><span class="text">&nbsp;История</span></h4> \
-		</div> \
-		',
+		'GpoupList':['Путь','Переключатели'],
 	},
 	{
 		'Name':'Frozen Highlands',
-		'File':'frozen.GIF',
+		'File':'img/frozen.GIF',
 		'pointarr':'frozenPt',
 		'offsetTop':'205px',
 		'offsetLeft':'601px',
 		'StartIndex':1,
 		'zoom':2.2,
-		'GpoupList':'\
-		<div href="#" class="list-group-item"> \
-		<h4 class="list-group-item-heading"> \
-		<span class="icon"></span><span class="text">&nbsp;Учителя</span></h4> \
-		</div> \
-		<div href="#" class="list-group-item"> \
-		<h4 class="list-group-item-heading"> \
-		<span class="icon"></span><span class="text">&nbsp;Фонтаны</span></h4> \
-		</div> \
-		<div href="#" class="list-group-item"> \
-		<h4 class="list-group-item-heading"> \
-		<span class="icon"></span><span class="text">&nbsp;Разное</span></h4> \
-		</div> \
-		<div href="#" class="list-group-item"> \
-		<h4 class="list-group-item-heading"><span class="icon"></span><span class="text">&nbsp;Всяко</span></h4> \
-		</div> \
-		<div href="#" class="list-group-item autohist"> \
-		<h4 class="list-group-item-heading"> \
-		<span class="icon"></span><span class="text">&nbsp;История</span></h4> \
-		</div> \
-		',
+		'GpoupList':['Учителя','Фонтаны','Разное','Всяко'],
 	},
 	{
 		'Name':'Blackshire',
-		'File':'blackshire.GIF',
+		'File':'img/blackshire.GIF',
 		'pointarr':'blackshirePt',
 		'offsetTop':'205px',
 		'offsetLeft':'601px',
 		'StartIndex':1,
 		'zoom':2.2,
-		'GpoupList':'\
-		<div href="#" class="list-group-item"> \
-		<h4 class="list-group-item-heading"> \
-		<span class="icon"></span><span class="text">&nbsp;Учителя</span></h4> \
-		</div> \
-		<div href="#" class="list-group-item"> \
-		<h4 class="list-group-item-heading"> \
-		<span class="icon"></span><span class="text">&nbsp;Фонтаны</span></h4> \
-		</div> \
-		<div href="#" class="list-group-item"> \
-		<h4 class="list-group-item-heading"> \
-		<span class="icon"></span><span class="text">&nbsp;Разное</span></h4> \
-		</div> \
-		<div href="#" class="list-group-item"> \
-		<h4 class="list-group-item-heading"><span class="icon"></span><span class="text">&nbsp;Всяко</span></h4> \
-		</div> \
-		<div href="#" class="list-group-item autohist"> \
-		<h4 class="list-group-item-heading"> \
-		<span class="icon"></span><span class="text">&nbsp;История</span></h4> \
-		</div> \
-		',
+		'GpoupList':['Учителя','Фонтаны','Разное','Всяко'],
 	},
 	{
 		'Name':'Castle_Ironfist',
-		'File':'ironfist.GIF',
+		'File':'img/ironfist.GIF',
 		'pointarr':'ironfistPt',
 		'offsetTop':'205px',
 		'offsetLeft':'601px',
 		'StartIndex':1,
 		'zoom':2.2,
-		'GpoupList':'\
-		<div href="#" class="list-group-item"> \
-		<h4 class="list-group-item-heading"> \
-		<span class="icon"></span><span class="text">&nbsp;Учителя</span></h4> \
-		</div> \
-		<div href="#" class="list-group-item"> \
-		<h4 class="list-group-item-heading"> \
-		<span class="icon"></span><span class="text">&nbsp;Бочки</span></h4> \
-		</div> \
-		<div href="#" class="list-group-item"> \
-		<h4 class="list-group-item-heading"> \
-		<span class="icon"></span><span class="text">&nbsp;Разное</span></h4> \
-		</div> \
-		<div href="#" class="list-group-item"> \
-		<h4 class="list-group-item-heading"><span class="icon"></span><span class="text">&nbsp;Всяко</span></h4> \
-		</div> \
-		<div href="#" class="list-group-item autohist"> \
-		<h4 class="list-group-item-heading"> \
-		<span class="icon"></span><span class="text">&nbsp;История</span></h4> \
-		</div> \
-		',
+		'GpoupList':['Учителя','Бочки','Разное','Всяко'],
 	},
 	{
 		'Name':'Mire of the Damned',
-		'File':'mire.GIF',
+		'File':'img/mire.GIF',
 		'pointarr':'mirePt',
 		'offsetTop':'205px',
 		'offsetLeft':'601px',
 		'StartIndex':1,
 		'zoom':2.2,
-		'GpoupList':'\
-		<div href="#" class="list-group-item"> \
-		<h4 class="list-group-item-heading"> \
-		<span class="icon"></span><span class="text">&nbsp;Учителя</span></h4> \
-		</div> \
-		<div href="#" class="list-group-item"> \
-		<h4 class="list-group-item-heading"> \
-		<span class="icon"></span><span class="text">&nbsp;Бочки</span></h4> \
-		</div> \
-		<div href="#" class="list-group-item"> \
-		<h4 class="list-group-item-heading"> \
-		<span class="icon"></span><span class="text">&nbsp;Разное</span></h4> \
-		</div> \
-		<div href="#" class="list-group-item"> \
-		<h4 class="list-group-item-heading"><span class="icon"></span><span class="text">&nbsp;Всяко</span></h4> \
-		</div> \
-		<div href="#" class="list-group-item autohist"> \
-		<h4 class="list-group-item-heading"> \
-		<span class="icon"></span><span class="text">&nbsp;История</span></h4> \
-		</div> \
-		',
+		'GpoupList':['Учителя','Бочки','Разное','Всяко'],
 	},
 	{
 		'Name':'Free Haven',
-		'File':'freehaven.GIF',
+		'File':'img/freehaven.GIF',
 		'pointarr':'freehavenPt',
 		'offsetTop':'233px',
 		'offsetLeft':'594px',
 		'StartIndex':1,
 		'zoom':2.4,
-		'GpoupList':'\
-		<div href="#" class="list-group-item"> \
-		<h4 class="list-group-item-heading"> \
-		<span class="icon"></span><span class="text">&nbsp;Учителя</span></h4> \
-		</div> \
-		<div href="#" class="list-group-item"> \
-		<h4 class="list-group-item-heading"> \
-		<span class="icon"></span><span class="text">&nbsp;Бочки</span></h4> \
-		</div> \
-		<div href="#" class="list-group-item"> \
-		<h4 class="list-group-item-heading"> \
-		<span class="icon"></span><span class="text">&nbsp;Разное</span></h4> \
-		</div> \
-		<div href="#" class="list-group-item"> \
-		<h4 class="list-group-item-heading"><span class="icon"></span><span class="text">&nbsp;Всяко</span></h4> \
-		</div> \
-		<div href="#" class="list-group-item autohist"> \
-		<h4 class="list-group-item-heading"> \
-		<span class="icon"></span><span class="text">&nbsp;История</span></h4> \
-		</div> \
-		',
+		'GpoupList':['Учителя','Бочки','Разное','Всяко'],
 	},
 	{
 		'Name':'Misty Islands',
-		'File':'mist.png',
+		'File':'img/mist.png',
 		'pointarr':'mistPt',
 		'offsetTop':'375px',
 		'offsetLeft':'735px',
 		'StartIndex':1,
 		'zoom':3.9,
-		'GpoupList':'\
-		<div href="#" class="list-group-item"> \
-		<h4 class="list-group-item-heading"> \
-		<span class="icon"></span><span class="text">&nbsp;Учителя</span></h4> \
-		</div> \
-		<div href="#" class="list-group-item"> \
-		<h4 class="list-group-item-heading"> \
-		<span class="icon"></span><span class="text">&nbsp;Фонтаны</span></h4> \
-		</div> \
-		<div href="#" class="list-group-item"> \
-		<h4 class="list-group-item-heading"> \
-		<span class="icon"></span><span class="text">&nbsp;Прочее</span></h4> \
-		</div> \
-		<div href="#" class="list-group-item autohist"> \
-		<h4 class="list-group-item-heading"> \
-		<span class="icon"></span><span class="text">&nbsp;История</span></h4> \
-		</div> \
-		',
+		'GpoupList':['Учителя','Фонтаны','Прочее'],
 	},
 	{
 		'Name':'Dragonsands',
-		'File':'dragonsand.GIF',
+		'File':'img/dragonsand.GIF',
 		'pointarr':'dragonsandPt',
 		'offsetTop':'205px',
 		'offsetLeft':'601px',
 		'StartIndex':1,
 		'zoom':2.2,
-		'GpoupList':'\
-		<div href="#" class="list-group-item"> \
-		<h4 class="list-group-item-heading"> \
-		<span class="icon"></span><span class="text">&nbsp;Город</span></h4> \
-		</div> \
-		<div href="#" class="list-group-item"> \
-		<h4 class="list-group-item-heading"> \
-		<span class="icon"></span><span class="text">&nbsp;Фонтаны</span></h4> \
-		</div> \
-		<div href="#" class="list-group-item"> \
-		<h4 class="list-group-item-heading"> \
-		<span class="icon"></span><span class="text">&nbsp;Разное</span></h4> \
-		</div> \
-		<div href="#" class="list-group-item autohist"> \
-		<h4 class="list-group-item-heading"> \
-		<span class="icon"></span><span class="text">&nbsp;История</span></h4> \
-		</div> \
-		',
+		'GpoupList':['Город','Фонтаны','Разное'],
 	},
 	{
 		'Name':'Paradise Valley',
-		'File':'paradise.GIF',
+		'File':'img/paradise.GIF',
 		'pointarr':'paradisePt',
 		'offsetTop':'205px',
 		'offsetLeft':'601px',
 		'StartIndex':1,
 		'zoom':2.2,
-		'GpoupList':'\
-		<div href="#" class="list-group-item"> \
-		<h4 class="list-group-item-heading"> \
-		<span class="icon"></span><span class="text">&nbsp;Учителя</span></h4> \
-		</div> \
-		<div href="#" class="list-group-item"> \
-		<h4 class="list-group-item-heading"> \
-		<span class="icon"></span><span class="text">&nbsp;Фонтаны</span></h4> \
-		</div> \
-		<div href="#" class="list-group-item"> \
-		<h4 class="list-group-item-heading"> \
-		<span class="icon"></span><span class="text">&nbsp;Разное</span></h4> \
-		</div> \
-		<div href="#" class="list-group-item autohist"> \
-		<h4 class="list-group-item-heading"> \
-		<span class="icon"></span><span class="text">&nbsp;История</span></h4> \
-		</div> \
-		',
+		'GpoupList':['Учителя','Фонтаны','Разное'],
 	},
 	{
 		'Name':'Sweet Waters',
-		'File':'sweetwater.GIF',
+		'File':'img/sweetwater.GIF',
 		'pointarr':'sweetwaterPt',
 		'offsetTop':'205px',
 		'offsetLeft':'601px',
 		'StartIndex':1,
 		'zoom':2.2,
-		'GpoupList':'\
-		<div href="#" class="list-group-item"> \
-		<h4 class="list-group-item-heading"> \
-		<span class="icon"></span><span class="text">&nbsp;Учителя</span></h4> \
-		</div> \
-		<div href="#" class="list-group-item"> \
-		<h4 class="list-group-item-heading"> \
-		<span class="icon"></span><span class="text">&nbsp;Фонтаны</span></h4> \
-		</div> \
-		<div href="#" class="list-group-item"> \
-		<h4 class="list-group-item-heading"> \
-		<span class="icon"></span><span class="text">&nbsp;Разное</span></h4> \
-		</div> \
-		<div href="#" class="list-group-item autohist"> \
-		<h4 class="list-group-item-heading"> \
-		<span class="icon"></span><span class="text">&nbsp;История</span></h4> \
-		</div> \
-		',
+		'GpoupList':['Учителя','Фонтаны','Разное'],
 	},
 	{
 		'Name':'Hermit`s Island',
-		'File':'hermits.GIF',
+		'File':'img/hermits.GIF',
 		'pointarr':'hermitsPt',
 		'offsetTop':'205px',
 		'offsetLeft':'601px',
 		'StartIndex':1,
 		'zoom':2.2,
-		'GpoupList':'\
-		<div href="#" class="list-group-item"> \
-		<h4 class="list-group-item-heading"> \
-		<span class="icon"></span><span class="text">&nbsp;Разное</span></h4> \
-		</div> \
-		<div href="#" class="list-group-item autohist"> \
-		<h4 class="list-group-item-heading"> \
-		<span class="icon"></span><span class="text">&nbsp;История</span></h4> \
-		</div> \
-		',
+		'GpoupList':['Разное'],
 	},
 ]
 

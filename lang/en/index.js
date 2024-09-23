@@ -5,21 +5,29 @@ var langStr={
 	ACT_GLOBALMOVE:'Global move',
 	ACT_GLOBALSIZE:'Global size',
 	ACT_YONGUP:'Young numbers are flowing up.',
+	ACT_BUILDROUTE:'Build a route (r)',
+	ACT_TEMPGLINES:'Drawing Guide Lines (l)',
 	FASTACT:'Fast actions:',
 	FASTACT_SAVEMAP:'Save map position and size in memory.',
 	FASTACT_NEWEMAP:'Create a new map (based on the current one).',
 	FASTACT_NEWGROUP:'New group.',
 	FASTACT_NEWPOINT:'New point.',
-	FASTACT_COMPRESS:'Compress.',
+	FASTACT_COMPRESS:'Compress points.',
+	FASTACT_IGNORDEL:'Delete ignore list.',
 	MAPS:'Maps',
+	HISTNAME:'History',
 	GROUPS:'Groups',
 	GROUPS_ALLON:'Enable all',
 	GROUPS_ALLOFF:'Disable all',
 	GROUPS_COMMON:'Common group',
 	GROUPS_HISTORY:'History',
-	CONTMENU:'Item menu',
+	GROUPCMENU:'Group menu',
+	GROUPCMENU_MOVE:'Move',
+	GROUPCMENU_REMOVE:'Remove',
+	CONTMENU:'Point menu',
 	CONTMENU_CHGROUP:'Change group',
-	CONTMENU_DELPOINT:'Remove Item',	
+	CONTMENU_DELPOINT:'Remove Item',
+	CONTMENU_ADDIGNORE:'Ignore for routes',
 	LANG:'<img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Flag_of_the_United_Kingdom_%281-2%29.svg" style="display: inline;height: 1em;">Lang',
 	HELP_TEXT:'<br>-----The operating procedure is approximately as follows (quick start)----------\:<br> \
 	we select the desired map on the right menu, as we progress through the game, we turn off the collected points individually by clicking on it in the map, and our path is remembered in history.<br> \
@@ -40,7 +48,7 @@ var langStr={
 	<br>\
 	In the profiles menu (on the right), when clicked on any map (profile), activates the profile and changes the card corresponding to the profile, also loads history and loads new groups (menu on the left),<br> \
 	when you click on the label \"cards\" the profile menu opens/closes,<br>\
-	when you click with alt pressed on the “groups” label, the group menu opens/closes.<br> \
+	when you click with Ctrl pressed on the “groups” label, the group menu opens/closes.<br> \
 	<br>-----------Details--------<br> \
 	<br>---Group \"History\"\:<br> \
 	History is saved in localStorage<br>\
@@ -65,14 +73,22 @@ var langStr={
 	the latest changes will be saved. 2. After the operation, copy and save the result in settings.js).<br> \
 	<br>\
 	Shift + click on the group - selects the points of the group<br> \
-	Сtrl + click on the group - allows you to rename the group<br> \
-	Alt + click on the group - allows you to remove the group<br> \
+	alt + click on the group - allows you to rename the group<br> \
+	ctrl + click on the group - menu appears<br> \
+	where you can:<br> \
+	move group (also affects groups when collecting markers of the current map)<br> \
+	delete group<br> \
+	when moving, destination group selection is activated<br> \
+	click - confirm and move<br> \
+	ctrl + click - cancel<br> \
 	just click on the group - opens/closes it<br> \
+	<br>---Maps/profiles\:<br> \
+	Shift + click on the map - allows you to rename it.<br> \
 	<br>---Map\:<br> \
 	Click on an element on the map while holding down the shift key - you can edit the text description. \
 	<br>\
-	If you hold down ctrl and click on map element, item menu appears, you can change his group number,<br> \
-	remove the item itself<br> \
+	If you hold down ctrl and click on map element, item menu appears, you can change his group number<br> \
+	or remove the item itself or add the point to the ignore list<br> \
 	Markers (elements) on the map can be moved while holding alt - then a copy of the mark is created<br> \
 	Also added a method to cancel dragging if ctrl and shift are pressed.<br> \
 	<br> \
@@ -97,6 +113,18 @@ var langStr={
 	Option to move with keys - the point (element) will be moved using the arrow keys on keyboard, there is also a hotkey in brackets. \
 	<br>\
 	In the action menu, it is now possible to show younger numbers on top of older ones. \
+	<br>\
+	option build a route - builds a route based on points on the map, also writes the last removed point to the beginning \
+	allows you to change the size using the [] keys \
+	<br> \
+	Drawing lines - turns on the line drawing mode, click on the map - first point, then interactively click on the desired location of second point, \
+	the line will fixed, then you can draw a new one or turn off this mode, also if you hold shift while selecting second point, \
+	then the line will become straight. It is also possible to change the line color in the drawing toolbar; the default is the back color. <br> \
+	It is now possible to select other tools, such as a permanent line. \
+	Constant line - coordinates are written to memory for later export to settings.js. \
+	Added line drawing settings - open by right-clicking on the permanent line icon, \
+	each setting is opened with a left mouse click, the selected position is remembered in memory and used when drawing a line, \
+	Also, when you select an option, the setting closes; some settings, such as the inscription, are remembered only when you close (click again) this setting. \
 	<br>---Quick Actions<br> \
 	Saving the position of current map (and other maps) in memory - saves the position for profile settings, for convenience, also saves zoom,<br> \
 	new map (profile) - creates a new profile in memory with one new label, convenient if there are no cards at all or if you need to duplicate the current one<br> \
@@ -105,9 +133,11 @@ var langStr={
 	after all the manipulations, we need to copy all profiles - double click on the \"Groups\" inscription and put it in settings.js with overwriting<br> \
 	<br>\
 	The new action compress - compresses the selected points; if there are none, compresses all points. \
+	<br> \
+	Delete ignore list - deletes the ignore list from storage and memory \
 	<br>---Settings settings.js<br> \
 	You can determine the index from which the counting of numbers begins. This is the StartIndex field, it is outdated, but it works, it was needed when history only remembered numbers, regardless of the map.<br>\
 	pointarr - link to an array of elements (points, circles) for a given map (profile)<br> \
-	GpoupList - a list of groups - groups with a fairly standard and defined format, almost naked html<br> \
+	GpoupList - a list of groups <br> \
 	',
 };
